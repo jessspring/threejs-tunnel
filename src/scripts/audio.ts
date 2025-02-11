@@ -49,7 +49,7 @@ export function playFootstep(listener: AudioListener) {
         reverb.buffer = impulseResponse(1, 3, false, listener.context);
 
         const gain = listener.context.createGain();
-        gain.gain.value = 0.5;
+        gain.gain.value = 0.2;
 
         source.connect(gain);
         gain.connect(reverb);

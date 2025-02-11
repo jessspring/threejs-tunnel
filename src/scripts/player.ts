@@ -78,8 +78,7 @@ export class Player {
         this.mesh.position.setY(0.9 + Math.sin(this.stepAccumulator * 3) / 50);
 
         //Collision detection
-        if (false)
-            this.collision();
+        this.collision();
 
         if (!Input.isMouseLocked())
             return;
